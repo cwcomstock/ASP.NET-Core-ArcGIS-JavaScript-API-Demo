@@ -13,7 +13,9 @@ require([
 ], (WebScene, SceneView, esriConfig, Home, Search, Expand, BasemapGallery, LayerList) => {
 
     //point to the correct portal
-    esriConfig.portalUrl = _portalUrl;
+    if (_portalUrl) {
+        esriConfig.portalUrl = _portalUrl;
+    }
 
     // load webscene from ArcGIS Enteprise
     const map = new WebScene({

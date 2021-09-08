@@ -1,8 +1,8 @@
 ﻿"use strict";
 
 //#region Scene, Map and Layer Variables
-const _portalUrl = "https://gis01.snclavalin-usmaps.com/portal03/";
-const _sceneId = "ade97ede1e6845bb98fde468088bb411";
+const _portalUrl = "";
+const _sceneId = "0359bb9202614d7ca2bd0acc278422d6";
 
 //#endregion Scene, Map and Layer Variables
 

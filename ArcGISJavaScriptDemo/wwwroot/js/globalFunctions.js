@@ -13,7 +13,11 @@ const loadUnderGroundMenu = (view, map) => {
 
     //set click event handler on underground button
     document.getElementById("undergroundBtn").addEventListener("click", () => {
-        view.goTo(map.presentation.slides.getItemAt(0).viewpoint, {
+        let slideNum = 1;
+        if (_portalUrl) {
+            slideNum = 0;
+        }
+        view.goTo(map.presentation.slides.getItemAt(slideNum).viewpoint, {
             duration: 1000
         });
     });
