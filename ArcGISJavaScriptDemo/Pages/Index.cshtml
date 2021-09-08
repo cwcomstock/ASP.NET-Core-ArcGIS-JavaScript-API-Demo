@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="viewDiv"></div>
+<div id="underGroundMenu" class="esri-widget">
+    <div id="opacityInput" class="esri-icon-checkbox-unchecked"></div>
+    <label for="opacityInput">See through ground</label>
+    <button id="undergroundBtn">Go underground</button>
+</div>
+
+
+@section Scripts
+    {
+    <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/css/main.css">
+    <script>
+        var dojoConfig = {
+            async: true // Places Dojo loader into asynchronous mode. Default is synchronous
+        };
+    </script>
+    <script src="https://js.arcgis.com/4.18/"></script>
+    <script src="js/globalVariables.js"></script>
+    <script src="js/globalFunctions.js"></script>
+    <script src="js/standardWidgets.js"></script>
+    <script src="js/3dScene.js"></script>
+}
+
